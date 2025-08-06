@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Árboles - Reserva El Matilisguate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Reserva Natural "El Matilisguate"</h1>
+    <h2>Registro de Árboles</h2>
+
+    <form id="arbolForm">
+        <label for="nombreArbol">Nombre del Árbol:</label>
+        <input type="text" id="nombreArbol" placeholder="Ej. Ceiba" required>
+
+        <label for="tipoHoja">Tipo de Hoja:</label>
+        <input type="text" id="tipoHoja" placeholder="Ej. Dentada, Unifoliada" required>
+
+        <label for="tipoSuelo">Tipo de Suelo:</label>
+        <input type="text" id="tipoSuelo" placeholder="Ej. Arenoso, Seco, Pedregoso" required>
+
+        <button type="submit">Registrar Árbol</button>
+    </form>
+
+    <div class="loader" id="loader" style="display: none;">Cargando…</div>
+
+    <h2>Árboles Registrados</h2>
+    <table id="arbolesTable">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Tipo de Hoja</th>
+            <th>Tipo de Suelo</th>
+            <th>ID Cuidador</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
